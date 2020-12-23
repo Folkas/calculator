@@ -10,8 +10,8 @@ class calculator:
         return self.__number
 
     def reset(self) -> float:
-      self__number = 0
-      return self__number
+      self.__number = 0
+      return self.__number
 
     def add(self, input: float) -> float:
       self.__number += input

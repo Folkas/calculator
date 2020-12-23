@@ -1,5 +1,6 @@
 # Calculator
 Calculator for DS.2.1.5. project
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Folkas/calculatorfolkas/blob/main/LICENSE)
 
 ## Table of contents:
 * [General info](#general-info)

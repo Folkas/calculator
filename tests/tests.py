@@ -33,32 +33,32 @@ class calculator:
       self.__number **= 1.00/input
       return self.__number
 
-unittest = calculator()
+test1 = calculator()
 
 #check if resets properly
 def test_reset():
-  assert unittest.reset() == 0
+  assert test1.reset() == 0
 
 #check if adds correctly
 def test_add():
-  assert unittest.add(10) == 10
+  assert test1.add(10) == 10
 
 #check if subtracts correctly
 def test_subtract():
-  assert unittest.subtract(6) == 4
+  assert test1.subtract(6) == 4
 
 #check if multiplies correctly
 def test_multiply():
-  assert unittest.multiply(9) == 36
+  assert test1.multiply(9) == 36
 
 #check if divides correctly
 def test_divide():
-  assert unittest.divide(2.25) == 16
+  assert test1.divide(2.25) == 16
 
 #check if takes nth root correctly
 def test_nroot():
-  assert unittest.nroot(4) == 2
+  assert test1.nroot(4) == 2
 
 #check if gets correct number
 def test_getNumber():
-  assert unittest.getNumber == 2
+  assert test1.getNumber == 2

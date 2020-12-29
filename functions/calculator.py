@@ -67,7 +67,12 @@ class calculator:
 
 #divides a number
     def divide(self, input: float) -> float:
-        """Takes in a float input, returns the quotient of number and input"""
+        """
+        Takes in a float input, returns the quotient of number and input
+        If input is zero, returns ZeroDivisionError
+        """
+        if input == 0:
+          raise ZeroDivisionError
         self.__number /= input
         return self.__number
 

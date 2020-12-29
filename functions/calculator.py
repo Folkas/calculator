@@ -50,35 +50,42 @@ class calculator:
 #adds a number
     def add(self, input: float) -> float:
         """Takes in a float input, returns the sum of input and number"""
+        if not isinstance(input, (float, int)):
+          raise TypeError
         self.__number += input
         return self.__number
 
 #subtracts a number
     def subtract(self, input: float) -> float:
         """Takes in a float input, returns the difference of number and input"""
+        if not isinstance(input, (float, int)):
+          raise TypeError
         self.__number -= input
         return self.__number
 
 #multiplies a number
     def multiply(self, input: float) -> float:
         """Takes in a float input, returns the product of number and input"""
+        if not isinstance(input, (float, int)):
+          raise TypeError
         self.__number *= input
         return self.__number
 
 #divides a number
     def divide(self, input: float) -> float:
-        """
-        Takes in a float input, returns the quotient of number and input
-        If input is zero, returns ZeroDivisionError
-        """
+        """Takes in a float input, returns the quotient of number and input"""
+        if not isinstance(input, (float, int)):
+          raise TypeError
         if input == 0:
-          raise ZeroDivisionError
+            raise ZeroDivisionError
         self.__number /= input
         return self.__number
 
 #takes nth root from a number
     def nroot(self, n: float) -> float:
         """Takes in a float n, returns the nth root of number"""
+        if not isinstance(input, (float, int)):
+          raise TypeError
         self.__number **= 1.00/n
         return self.__number
 

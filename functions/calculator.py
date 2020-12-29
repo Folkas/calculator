@@ -84,7 +84,7 @@ class calculator:
 #takes nth root from a number
     def nroot(self, n: float) -> float:
         """Takes in a float n, returns the nth root of number"""
-        if not isinstance(input, (float, int)):
+        if not isinstance(n, (float, int)):
           raise TypeError
         self.__number **= 1.00/n
         return self.__number

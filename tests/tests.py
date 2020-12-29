@@ -26,6 +26,8 @@ class calculator:
       return self.__number
 
     def divide(self, input: float) -> float:
+      if input == 0:
+          raise ZeroDivisionError
       self.__number /= input
       return self.__number
 
@@ -62,3 +64,8 @@ def test_nroot():
 #check if gets correct number
 def test_getNumber():
   assert test1.getNumber == 2
+
+#check if zero division works well
+def test_zeroDivision():
+    with pytest.raises(ZeroDivisionError):
+        test1.divide(0)

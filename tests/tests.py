@@ -14,24 +14,34 @@ class calculator:
       return self.__number
 
     def add(self, input: float) -> float:
+      if not isinstance(input, (float, int)):
+          raise TypeError
       self.__number += input
       return self.__number
 
     def subtract(self, input: float) -> float:
+      if not isinstance(input, (float, int)):
+          raise TypeError
       self.__number -= input
       return self.__number
 
     def multiply(self, input: float) -> float:
+      if not isinstance(input, (float, int)):
+          raise TypeError
       self.__number *= input
       return self.__number
 
     def divide(self, input: float) -> float:
+      if not isinstance(input, (float, int)):
+          raise TypeError
       if input == 0:
           raise ZeroDivisionError
       self.__number /= input
       return self.__number
 
     def nroot(self, input: float) -> float:
+      if not isinstance(input, (float, int)):
+          raise TypeError
       self.__number **= 1.00/input
       return self.__number
 

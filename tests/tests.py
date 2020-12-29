@@ -69,3 +69,24 @@ def test_getNumber():
 def test_zeroDivision():
     with pytest.raises(ZeroDivisionError):
         test1.divide(0)
+      
+#checks if TypeError works when the input is not int or float
+def test_addType():
+    with pytest.raises(TypeError):
+        test1.divide("1")
+
+def test_subtractType():
+    with pytest.raises(TypeError):
+        test1.subtract("1")
+
+def test_multiplyType():
+    with pytest.raises(TypeError):
+        test1.multiply("1")
+
+def test_divideType():
+    with pytest.raises(TypeError):
+        test1.divide("1")
+
+def test_nrootType():
+    with pytest.raises(TypeError):
+        test1.nroot("1")
